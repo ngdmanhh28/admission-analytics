@@ -3,7 +3,7 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
 # Chuỗi kết nối MySQL
-SQLALCHEMY_DATABASE_URL = "mysql+pymysql://root:manh26042006@localhost:3306/neu_tuyensinh"
+SQLALCHEMY_DATABASE_URL = ""
 
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
